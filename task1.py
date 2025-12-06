@@ -19,4 +19,21 @@
 
 Ответ должен быть напечатан как одно число.
 """
-
+arr = [0]* 21
+arr[3] = 1
+for i in range(4,8):
+   arr[i] += arr[i-1] + arr[i-2]
+   if i % 2 == 0:
+       arr[i] += arr[i//2]
+        
+mas = [0] * 21
+mas[7] = 1
+for i in range(8, 21):
+    if i == 10:
+        mas[i] == 10
+    else:
+        mas[i] += mas[i-1] + mas[i-2]
+        if i % 2 == 0 and i// 2 >=7:
+            mas[i] += mas[i//2]
+        
+print(arr[7] * mas[20])
